@@ -1,14 +1,17 @@
 import React from 'react';
-import {SafeAreaView, StyleSheet, View, Text, StatusBar} from 'react-native';
+import {StyleSheet, View, Text} from 'react-native';
 
 export default function App() {
   return (
     <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text style={{fontFamily: 'Dance', fontSize: 40}}>
-        Whateever Happens happens
-      </Text>
+      <Text style={styles.text}>Whateever Happens happens</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  text: {
+    fontSize: 25,
+    fontFamily: 'FlashbackDemo',
+  },
+});
