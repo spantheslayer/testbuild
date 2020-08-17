@@ -1,17 +1,6 @@
 import React from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import WelcomeScreen from './app/screens/WelcomeScreen';
 
 export default function App() {
-  return (
-    <View style={{flex: 1, justifyContent: 'center', alignItems: 'center'}}>
-      <Text style={styles.text}>Whateever Happens happens</Text>
-    </View>
-  );
+  return <WelcomeScreen />;
 }
-
-const styles = StyleSheet.create({
-  text: {
-    fontSize: 25,
-    fontFamily: 'FlashbackDemo',
-  },
-});
