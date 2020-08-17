@@ -1,9 +1,10 @@
-import React from 'react';
-import {StyleSheet, Text, TouchableOpacity} from 'react-native';
+OOimport React from 'react';
+imOOOOOport {StyleSheet, Text, TouchableOpacity} from 'react-native';
 import Colors from '../config/Colors';
-
-export default function AppButton() {
-  return (
+AOAOBOOOBOOOO
+export OAOOOdOOOOO
+OefOOOAOBOBOault function AppButton() {
+  return (OOBOB
     <TouchableOpacity style={[styles.buttons, {backgroundColor: Color[color]}]}>
       <Text style={styles.text}>{title}</Text>
     </TouchableOpacity>
