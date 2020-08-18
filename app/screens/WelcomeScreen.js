@@ -27,7 +27,9 @@ export default function WelcomeScreen() {
             Save your notes acroos all your devices
           </Text>
         </View>
-        <TouchableOpacity style={styles.buttonfb} onPress={console.log('yus')}>
+        <TouchableOpacity
+          style={styles.buttonfb}
+          onPress={() => alert('clicked')}>
           <Text
             style={{
               fontSize: 15,
@@ -60,6 +62,11 @@ export default function WelcomeScreen() {
             }}>
             Continue with Email
           </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.loginBtn}
+          onPress={console.log('button tapped')}>
+          <Text>Login</Text>
         </TouchableOpacity>
       </ImageBackground>
     </>
@@ -102,6 +109,14 @@ const styles = StyleSheet.create({
     backgroundColor: colors.primary,
     padding: 15,
     width: '85%',
-    marginBottom: 90,
+    marginBottom: 60,
+  },
+  loginBtn: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    borderRadius: 30,
+    backgroundColor: colors.secondary,
+    padding: 10,
+    width: '20%',
   },
 });
