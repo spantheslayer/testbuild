@@ -27,14 +27,38 @@ export default function WelcomeScreen() {
             Save your notes acroos all your devices
           </Text>
         </View>
-        <TouchableOpacity style={styles.button} onPress={console.log('yus')}>
+        <TouchableOpacity style={styles.buttonfb} onPress={console.log('yus')}>
           <Text
             style={{
               fontSize: 15,
               textTransform: 'uppercase',
               color: colors.white,
             }}>
-            TouchableOpacity
+            Continue with Facebook
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.buttongoogle}
+          onPress={console.log('yus')}>
+          <Text
+            style={{
+              fontSize: 15,
+              textTransform: 'uppercase',
+              color: colors.white,
+            }}>
+            Continue with Google
+          </Text>
+        </TouchableOpacity>
+        <TouchableOpacity
+          style={styles.buttonemail}
+          onPress={console.log('yus')}>
+          <Text
+            style={{
+              fontSize: 15,
+              textTransform: 'uppercase',
+              color: colors.white,
+            }}>
+            Continue with Email
           </Text>
         </TouchableOpacity>
       </ImageBackground>
@@ -54,13 +78,30 @@ const styles = StyleSheet.create({
     top: 33,
     alignItems: 'center',
   },
-  button: {
+  buttonfb: {
     alignItems: 'center',
     justifyContent: 'center',
     borderRadius: 30,
     backgroundColor: colors.primary,
     padding: 15,
     width: '85%',
-    marginVertical: 50,
+  },
+  buttongoogle: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 30,
+    backgroundColor: colors.primary,
+    padding: 15,
+    width: '85%',
+    marginVertical: 20,
+  },
+  buttonemail: {
+    alignItems: 'center',
+    justifyContent: 'center',
+    borderRadius: 30,
+    backgroundColor: colors.primary,
+    padding: 15,
+    width: '85%',
+    marginBottom: 90,
   },
 });
