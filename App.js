@@ -5,5 +5,5 @@ import Notes from './app/screens/Notes';
 import Settings from './app/screens/Settings';
 
 export default function App() {
-  return <Settings />;
+  return <WelcomeScreen />;
 }
