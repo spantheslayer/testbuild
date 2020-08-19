@@ -8,9 +8,9 @@ export default function WelcomeScreen() {
     <View style={styles.background}>
       <Text style={styles.text}>SaveIt</Text>
       <Text style={styles.slogan}>Save your notes across all your devices</Text>
-      <TouchableOpacity style={styles.button}>
+      <TouchableOpacity style={styles.loginbutton}>
         <LinearGradient colors={['#393e46', '#32e0c4']} style={styles.login}>
-          <Text style={styles.logintext}>Login</Text>
+          <Text style={styles.logintext}>Log In</Text>
         </LinearGradient>
       </TouchableOpacity>
     </View>
@@ -36,17 +36,19 @@ const styles = StyleSheet.create({
     color: colors.secondary,
     bottom: 220,
   },
-  button: {
-    alignItems: 'center',
-    justifyContent: 'center',
+  loginbutton: {
     width: '80%',
+    top: 90,
   },
   login: {
+    padding: 13,
     borderRadius: 30,
-
-    padding: 15,
+    width: '100%',
+    alignItems: 'center',
+    justifyContent: 'center',
   },
   logintext: {
     color: colors.white,
+    fontSize: 20,
   },
 });
